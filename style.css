@@ -11,6 +11,11 @@ html {
 }
 body {
   /* overflow-y: hidden; */
+  background-image: url("./assests/home.jpg" );
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 .col {
   font-weight: bold;
@@ -192,7 +197,7 @@ body {
 
 /* Hero section */
 .hero-container {
-  background: #0c0c0c;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +226,7 @@ body {
 
 .hero-content {
   z-index: 3;
-  margin-top: 2rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -334,12 +339,10 @@ button {
 
 .stopwatch {
   color: #fff;
-  position: absolute;
+  
   max-width: fit-content;
-  top: 1;
-  right: 0;
-  left: 0;
-  bottom: 0;
+ 
+  
   margin-left: 2rem;
   margin-bottom: 2rem;
 }

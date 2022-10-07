@@ -196,9 +196,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  /* padding: 0 30px;
   height: 100vh;
-  position: relative;
+  position: relative; */
   z-index: 1;
 }
 
@@ -221,15 +221,12 @@ body {
 
 .hero-content {
   z-index: 3;
-  max-width: 1200px;
-  max-height: 80%;
-  position: absolute;
-  padding: 8px 24px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 80px;
+  align-items: center;  
 }
+
 .hero-text {
   color: #fff;
   font-size: 16px;
@@ -337,7 +334,8 @@ button {
 
 .stopwatch {
   color: #fff;
-  position: fixed;
+  position: absolute;
+  max-width: fit-content;
   top: 1;
   right: 0;
   left: 0;
@@ -352,7 +350,7 @@ button {
     font-size: 40px;
   }
   .hero-content {
-    margin-bottom: 155px;
+    margin-bottom: 10rem;
   }
   .nav-logo {
     margin-left: 10px;
@@ -386,7 +384,7 @@ button {
     font-size: 32px;
   }
   .hero-content {
-    margin-bottom: 155px;
+    margin-top: 10rem;
   }
   .nav-logo {
     margin-left: 10px;
@@ -414,7 +412,7 @@ button {
     margin-left: 35px;
   }
   .hero-content {
-    margin-bottom: 155px;
+    margin-top: 10rem;
   }
   .nav-logo {
     margin-left: 10px;
@@ -428,7 +426,7 @@ button {
     margin-left: 15px;
   }
   .hero-content {
-    margin-bottom: 155px;
+    margin-top: 10rem;
   }
   .nav-logo {
     margin-left: 10px;

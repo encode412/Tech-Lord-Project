@@ -1,8 +1,10 @@
+// Grab  needed html elements from html file
 var sidebar = document.querySelector("#sidebar");
 var closeIcon = document.querySelector("#close-icon");
 var MobileIcon = document.querySelector("#mobile-icon");
 
 // Show Mobile Icon 
+
 function show() {
   sidebar.style.opacity = "100%";
   sidebar.style.top = "0";
@@ -15,10 +17,10 @@ function hide() {
 closeIcon.addEventListener("click", hide);
 MobileIcon.addEventListener("click", show);
 
-// StopWatch
+// StopWatch Logic
 
 const countdown = () => {
-  const countDate = new Date("May 17, 2024 00:00:00").getTime();
+  const countDate = new Date("September 20, 2023 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 
@@ -40,3 +42,5 @@ const countdown = () => {
  
 };
 setInterval(countdown, 1000);
+
+// <GROUP 3 VOTING SYSTEM PROJECT />

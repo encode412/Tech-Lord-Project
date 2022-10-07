@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&family=Oswald:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    #fff 0%,
+    #fff 50%,
+    #fffeeb 0%,
+    #fffeeb 50%
+  );
+  max-height: 100vh;
+  max-width: 100%;
+}
+.nav-logo {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  bottom: 40;
+  left: 0;
+  transform: translate(25%, 50%);
+}
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.map {
+  border: 1px solid white;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Progress Bar */
+
+.progress-container {
+  height: 40px;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -35px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 244, 244);
+  position: relative;
+}
+
+.progress-container-two {
+  height: 40px;
+  width: 200px;
+  max-width: 800px;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 327px;
+  display: flex;
+  align-items: center;
+  background-color: #3b729f;
+  position: relative;
+}
+.vote-wrapper {
+  display: inline-block;
+  position: relative;
+  top: -100%;
+  bottom: 10%;
+  left: 13%;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-left: 50px; */
+}
+.vote-text-sec {
+  display: inline-block;
+  position: relative;
+  top: -100%;
+  bottom: 10%;
+  right: 30%;
+  color: #3b729f;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-left: 50px; */
+}
+.first-vote {
+  display: inline;
+  margin-left: 10px;
+}
+.vote-text{
+  display: inline;
+  margin-left: 4px;
+}
+
+.second-vote {
+  margin-left: 100px;
+  margin-top: 9px;
+  display: flex;
+}
+.vote-wrapper-second {
+  margin-bottom: 20px;
+  display: inline;
+}
+.second-vote-text {
+  display: inline;
+  position: absolute;
+  top: 23%;
+  margin-left: 90px;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  background: red;
+  animation-name: progress-animation;
+  animation-duration: 13s;
+  animation-fill-mode: forwards;
+}
+
+#vote {
+  cursor: pointer;
+  color: #000;
+  margin-top: 50px;
+}
+#play-animation {
+  animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.edward-image {
+  margin-left: -150px;
+  margin-top: 8px;
+  z-index: 1;
+  position: static;
+  vertical-align: top;
+  transition: all 200ms ease;
+}
+.elon-image {
+  margin-left: 30px;
+  margin-top: 8px;
+  z-index: 1;
+  position: static;
+}
+.edward-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+}
+.elon-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+}
+ /* Voting Section : Cast Your Vote */
+.voting-section {
+  border: 9px solid #000;
+  padding: 20px;
+  width: 680px;
+  height: 310px;
+
+  position: absolute;
+  bottom: -17%;
+  right: 18%;
+  transform: translate(-10%, -5%);
+  text-align: center;
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.select-state {
+  margin-top: 60px;
+}
+.select-state label {
+  margin-right: 450px;
+  font-weight: bolder;
+}
+select {
+  position: absolute;
+  bottom: 49%;
+  right: 35%;
+  padding: 12px 22px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgb(86, 155, 39);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+#vote-button {
+  padding: 9px 30px;
+  background-color: rgba(0, 128, 38);
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  margin-top: -200px;
+}
+#vote-button:hover {
+  background-color: rgb(40, 156, 75);
+}
+.vote-images img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin: 20px;
+}
+.grey {
+   color: transparent;
+}
+.add-grey {
+  filter: grayscale(100%);
+}
+.vote-images img:hover {
+  filter: grayscale(100%);
+
+  cursor: pointer;
+}
+.vote-alert {
+  display: none;
+  justify-content: center;
+  color:rgb(12, 209, 25);
+  font-weight: bold;
+  
+  
+}
+.alert-state {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: -4px;
+  margin-left: 4px;
+}
+
+
+  /* Media Queries */
+@media screen and (max-width: 980px) {
+  .progress-container {
+    margin-left: -5px;
+  }
+  .vote-textt {
+    margin-left: -8px;
+    font-size: 25px;
+  }
+  .map-container {
+    margin-top: 400px;
+  }
+  .map {
+    width: 600px;
+  }
+  .voting-section {
+    
+    padding: 30px;
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(-10%, -5%);
+    text-align: center;
+    
+  }
+}
+
+@media screen and (max-width: 520px) {
+ 
+  .min-container {
+    margin-left: -102px;
+    margin-top: -20px;
+  }
+  .map-container {
+    margin-left: 180px;
+    
+    
+  }
+ 
+  
+  .vote-textt {
+    margin-left: -8px;
+    font-size: 20px;
+  }
+  
+  .vote-text {
+        font-size: 20px;
+  }
+  .map-container {
+    margin-top: 60px;
+    width: 300px;
+  }
+  .voting-section {
+    
+    padding: 5px;
+    width: 400px;
+    height: 310px;
+  
+    position: absolute;
+    bottom: -20%;
+    right: 10%;
+    transform: translate(-2%, -5%);
+    text-align: center;
+    
+  }
+  .progress-container {
+  height: 40px;
+  width: 80vw;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 220px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 244, 244);
+  position: relative;
+}
+.progress-container-two {
+  height: 40px;
+  width: 150px;
+  
+  text-align: center;
+  margin-top: -40px;
+  margin-right: 200px;
+  
+  display: flex;
+  align-items: center;
+  background-color: #3b729f;
+  position: relative;
+}
+.elon-image {
+  margin-left: -8px;
+}
+.select-state {
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+}
+.vote-text-sec {
+  margin-right: 30px;
+}
+}
+
+ /* <GROUP 3 VOTING SYSTEM PROJECT /> */

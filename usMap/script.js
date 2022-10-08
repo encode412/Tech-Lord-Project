@@ -60,8 +60,8 @@ voteButton.addEventListener("click", function () {
             // Convert counter value to a number using the "+" shorthand
             const c = +counter.innerText;
 
-            // Increment the counter by 5
-            const increment = 5;
+            // Increment the counter by 7
+            const increment = 7;
 
             // If counter value is less than the data-target
             if (c < target) {
